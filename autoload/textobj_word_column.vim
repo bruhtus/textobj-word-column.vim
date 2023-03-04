@@ -1,4 +1,4 @@
-function! textobj-word-column#based_column(textobj)
+function! textobj_word_column#based_column(textobj)
   let cursor_col = virtcol(".")
   exec "silent normal! v" . a:textobj . "\<Esc>"
   let start_col       = virtcol("'<")
